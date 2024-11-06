@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishani Sivaram's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/isivaram/">LinkedIn</a></li>
+                    <li><a href="https://github.com/ishanisiva/ishani.sivaram.github.io">GitHub</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<!-- Main Content Home Page -->
+<div class="main-content">
+    <h1>Welcome to Ishani Sivaram's Website</h1>
+    <p>Explore my education, employment experience, and more.</p>
+
+    <!-- Enter Name Button -->
+    <button onclick="getUserName()">Click to Enter Your Name</button>
+    <p id="welcomeMessage"></p>
+
+     <!-- LinkedIn Picture -->
+<div class="image-section">
+    <img id="profilePic" src="LinkedIn_Pic.jpg" alt="My Profile Picture" style="width: 200px; height: auto; cursor: pointer;" onclick="enlargeImage()" class="profile-image">
+</div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Ishani Sivaram</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="main.js"></script>
+    <!-- JavaScript that Handles Form & Local Storage -->
+    <script src="form.js"></script>
+</body>
+</html>

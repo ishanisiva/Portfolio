@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs - Ishani Sivaram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/isivaram/">LinkedIn</a></li>
+                    <li><a href="https://github.com/ishanisiva/ishani.sivaram.github.io">GitHub</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Contact Us Form -->
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <!-- Full Name -->
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label><input type="radio" name="contactMethod" value="email" required>Email</label><br>
+                <label><input type="radio" name="contactMethod" value="phone">Phone</label><br>
+                <label><input type="radio" name="contactMethod" value="chat">Chat</label>
+            </fieldset>
+
+            <!-- Checkbox for Gender -->
+            <div>
+                <label for="gender">Gender:</label>
+                <fieldset>
+                    <legend>Select your gender</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                    <label><input type="radio" name="gender" value="prefer_not_to_say"> Prefer not to say</label>
+                </fieldset>
+            </div>
+
+            <!-- Dropdown Menu for Inquiry -->
+            <div>
+                <label for="inquiryType">Type of Inquiry:</label>
+                <select id="inquiryType" name="inquiryType">
+                    <option value="">Select an option</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+
+            <!-- Textarea for Additional Comments -->
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+
+            <!-- Datalist for Suggestions -->
+            <div>
+                <label for="suggestions">Suggestions:</label>
+                <input list="suggestionList" id="suggestions" name="suggestions" placeholder="Type a suggestion..">
+                <datalist id="suggestionList">
+                    <option value="Improved Website Navigation">
+                    <option value="More Content">
+                    <option value="More Relevant Information">
+                    <option value="Change Colours">
+                </datalist>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+<footer>
+    <p>&copy; 2024 Ishani Sivaram</p>
+</footer>

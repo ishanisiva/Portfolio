@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; /* Light Gray */
+    color: #1D3557; /* Navy Blue text */
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #1D3557; /* Navy Blue */
+    padding: 15px 0; 
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1D3557; /* Navy Blue */
+    padding: 15px 0;
+    z-index: 10;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* put the items horizontally */
+    justify-content: center; /* Centers the items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Puts Space between menu items */
+}
+
+nav ul li a {
+    color: #F1FAEE; /* White */
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+nav ul li a:hover {
+    background-color: #A8DADC; /* Soft Light Blue */
+    color: #1D3557; /* Navy Blue */
+}
+
+/* Main Content */
+.main-content {
+    margin: 20px auto; /* Center content with margin */
+    max-width: 800px; /* Changes width so easy to read */
+    padding: 20px; /* Inner padding */
+    background-color: #FFFFFF; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center elements */
+    width: 100%;
+    max-width: 500px;
+}
+
+form div {
+    width: 100%;
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    text-align: left; /* Align labels to the left */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Text Area Styling */
+textarea {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #1D3557; /* Border color */
+    padding: 10px; 
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="email"],
+input[type="list"],
+select {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #1D3557; /* Border color */
+    padding: 10px; 
+}
+
+/* Button */
+button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1D3557; /* Navy Blue background */
+    color: #F1FAEE; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A8DADC; /* Soft Light Blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557; /* Navy Blue */
+    color: #F1FAEE; /* White */
+    padding: 5px 0; 
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
