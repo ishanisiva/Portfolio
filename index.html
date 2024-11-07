@@ -3,47 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishani Sivaram's Website</title>
+    <title>Ishani Sivaram | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Menu Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Ishani Sivaram</h1>
+        <p>Welcome to my page! I'm a Business Technology Management student with a passion for coding, technology, and customer service.</p>
+    </div>
+</section>
+
+<!-- Overview Section -->
+<section id="overview">
+    <div class="section-container">
+        <div class="overview-content">
+            <div class="left-side">
+                <img src="LinkedIn_Pic.jpg" alt="Ishani Sivaram" class="profile-photo">
+                <div class="social-buttons">
+                    <a href="https://github.com/ishanisiva/Portfolio" class="button">GitHub</a>
+                    <a href="https://www.linkedin.com/in/isivaram/" class="button">LinkedIn</a>
+                    <a href="path-to-your-resume.pdf" class="button" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>👨‍💻 I'm a Business Technology Student with over 4 years of experience in software development and cloud technologies.</p>
+                <p>🎓 Currently working toward my Bachelor of Commerce in Business Technology Management at Toronto Metropolitan University.</p>
+                <p>💻 In the future, I hope to get my Bachelor of Commerce degree. Then, I hope to be pursuing a career in cybersecurity as it combines my interest in technology and my desire to protect and secure digital systems and information.</p>
+                <p>🔧 I enjoy automating workflows, optimizing systems, and turning complex challenges into real results. 📈</p>
+                <p>💡 I'm always curious and constantly learning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p>I am currently pursuing a Bachelor's degree in Business Technology Management at Toronto Metropolitan University. I have experience in various areas, including software development, IT support, and coding instruction. I am passionate about using technology to solve real-world problems and enhance efficiency in business operations.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">Office365</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Canva</div>
+                <div class="skill-item">Adobe Photoshop</div>
+                <div class="skill-item">MacOS & Windows</div>
+                <div class="skill-item">Video & Audio Editing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience">
+    <div class="section-container">
+        <h2>Work Experience</h2>
+        
+        <!-- Sales Associate -->
+        <div class="job">
+            <button class="accordion">Sales Associate – The Shoe Company <span class="dates">(2023–2024)</span></button>
+            <div class="panel">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/isivaram/">LinkedIn</a></li>
-                    <li><a href="https://github.com/ishanisiva/ishani.sivaram.github.io">GitHub</a></li>
+                    <li>Assisted customers in finding the right footwear based on needs and preferences.</li>
+                    <li>Managed inventory and ensured product displays were visually appealing.</li>
+                    <li>Processed sales transactions, returns, and exchanges with efficiency and accuracy.</li>
+                    <li>Worked with team members to achieve sales targets and provide excellent customer service.</li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </div>
 
-<!-- Main Content Home Page -->
-<div class="main-content">
-    <h1>Welcome to Ishani Sivaram's Website</h1>
-    <p>Explore my education, employment experience, and more.</p>
+        <!-- Coding & Robotics Instructor -->
+        <div class="job">
+            <button class="accordion">Coding & Robotics Instructor – IDEA Lab Kids <span class="dates">(2023)</span></button>
+            <div class="panel">
+                <ul>
+                    <li>Instructed children in coding and robotics using hands-on activities and interactive lessons.</li>
+                    <li>Created lesson plans that fostered problem-solving and creativity through technology.</li>
+                    <li>Provided individualized support to students to help them understand coding concepts and troubleshoot projects.</li>
+                </ul>
+            </div>
+        </div>
 
-    <!-- Enter Name Button -->
-    <button onclick="getUserName()">Click to Enter Your Name</button>
-    <p id="welcomeMessage"></p>
+        <!-- Coding Instructor -->
+        <div class="job">
+            <button class="accordion">Coding Instructor – Code Ninjas <span class="dates">(2022–2023)</span></button>
+            <div class="panel">
+                <ul>
+                    <li>Designed and taught coding lessons to children, focusing on learning through games and activities.</li>
+                    <li>Introduced students to programming languages such as Scratch, Python, and JavaScript.</li>
+                    <li>Fostered a fun and educational environment that helped kids develop an interest in coding.</li>
+                </ul>
+            </div>
+        </div>
 
-     <!-- LinkedIn Picture -->
-<div class="image-section">
-    <img id="profilePic" src="LinkedIn_Pic.jpg" alt="My Profile Picture" style="width: 200px; height: auto; cursor: pointer;" onclick="enlargeImage()" class="profile-image">
-</div>
-</div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project 1: Personal Portfolio Website</h3>
+                    <p>A fully responsive portfolio website built using HTML, CSS, and JavaScript. Deployed on GitHub Pages.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2: Glo-Bus</h3>
+                    <p>Worked alongside 7 classmates to run a worldwide business and succeed in a camera and drone based industry
+                        utilizing strong planning, communication, and leadership.
+                        Placing 2nd out of the 12 businesses in the industry after 11 weeks of the simulation.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to email me at: <a href="mailto:ishani.sivaram@torontomu.ca">ishani.sivaram@torontomu.ca</a></p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Ishani Sivaram</p>
+        <p>&copy; 2024 Ishani Sivaram. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript File -->
-    <script src="main.js"></script>
-    <!-- JavaScript that Handles Form & Local Storage -->
-    <script src="form.js"></script>
 </body>
 </html>
+
+ <!-- JavaScript File -->
+ <script src="main.js"></script>

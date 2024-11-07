@@ -15,3 +15,25 @@ function enlargeImage() {
         img.style.width = "200px";  // Revert to original size
     }
 }
+
+// JavaScript for the accordion (collapsible) functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(function (accordion) {
+        accordion.addEventListener('click', function () {
+            // Toggle the active class for the clicked accordion button
+            this.classList.toggle('active');
+            
+            // Get the panel (content) associated with the clicked accordion
+            const panel = this.nextElementSibling;
+
+            // Toggle the panel visibility
+            if (panel.style.display === 'block') {
+                panel.style.display = 'none';
+            } else {
+                panel.style.display = 'block';
+            }
+        });
+    });
+});

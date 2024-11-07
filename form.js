@@ -18,5 +18,3 @@ function clearForm() {
     
     document.getElementById("output").textContent = "Form reset!";
 }
-
-
