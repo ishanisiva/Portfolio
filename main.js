@@ -1,20 +1,23 @@
 // JavaScript for the accordion (collapsible) functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const accordions = document.querySelectorAll('.accordion');
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all accordion buttons
+    const accordions = document.querySelectorAll(".accordion");
 
-    accordions.forEach(function (accordion) {
-        accordion.addEventListener('click', function () {
-            // Toggle the active class for the clicked accordion button
-            this.classList.toggle('active');
-            
-            // Get the panel (content) associated with the clicked accordion
-            const panel = this.nextElementSibling;
+    // Loop through each accordion button
+    accordions.forEach(function(accordion) {
+        accordion.addEventListener("click", function() {
+            // Toggle the aria-expanded attribute
+            const isExpanded = accordion.getAttribute("aria-expanded") === "true";
+            accordion.setAttribute("aria-expanded", !isExpanded);
+
+            // Get the associated panel
+            const panel = accordion.nextElementSibling;
 
             // Toggle the panel visibility
-            if (panel.style.display === 'block') {
-                panel.style.display = 'none';
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
             } else {
-                panel.style.display = 'block';
+                panel.style.display = "block";
             }
         });
     });
