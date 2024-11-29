@@ -343,6 +343,7 @@ html {
     background-color: #f4f4f9;
     padding: 50px 20px;
     text-align: center;
+    font-size: 1.2em;
 }
 
 #contact a {
@@ -350,67 +351,77 @@ html {
     font-weight: bold;
 }
 
-#contact {
-    padding: 50px;
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
     background-color: #fff;
-  }
-  
-  form label {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
     display: block;
-    margin-bottom: 10px;
-  }
-  
-  form input, form textarea {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input, form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #4caf50;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button {
+    background-color: #007acc;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
     border: none;
     border-radius: 5px;
-  }
-  
-  form button:hover {
-    background-color: #45a049;
-  }
-
-/* Default Light Mode Styles */
-body {
-    background-color: white;
-    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-header, footer {
-    background-color: #f1f1f1;
-    color: black;
+form button:hover {
+    background-color: #005f8f;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
+form .form-footer {
+    font-size: 1.1em;
+    color: #777;
+    margin-top: 10px;
 }
 
-header.dark-mode, footer.dark-mode {
-    background-color: #333;
-    color: white;
+/* Optional success/failure message style */
+form .success, form .error {
+    font-size: 1.1em;
+    color: green;
+    margin-top: 20px;
 }
 
-button.dark-mode {
-    background-color: #444;
-    color: white;
+form .error {
+    color: red;
 }
-
-a.dark-mode {
-    color: lightblue;
-}
-
 
 /* Footer */
 footer {

@@ -74,24 +74,3 @@ accordion.addEventListener('keydown', function (event) {
 if (phrases && dynamicText) {
     typeEffect();
 }
-
-// Dark Mode Toggle Button Functionality
-const darkModeToggle = document.getElementById('darkModeToggle');
-
-// Check if dark mode preference is saved in local storage
-if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-}
-
-// Event listener for the dark mode button
-darkModeToggle.addEventListener('click', () => {
-    // Toggle the 'dark-mode' class on body
-    document.body.classList.toggle('dark-mode');
-    
-    // Save the dark mode state in local storage
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        localStorage.removeItem('darkMode');
-    }
-});
